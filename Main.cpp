@@ -42,6 +42,7 @@
 //	b.add_transaction(Tlist[0]);
 //	block_chain bc;
 //	bc.add_block(&b);
+
 //	person* p=new person[3];
 //	//users buying coins
 //	p[0].buy_coins(50);
@@ -162,6 +163,7 @@ int main() {
 	b[0][0].add_transaction(t[0],0);
 	block_chain bc;
 	bc.add_block(b[0]);
+        bc.print_block_chain();
 	//assigning coisn to persons and market
 	person* p = new person[3];
 	for (int i = 0; i < 3; i++) {
